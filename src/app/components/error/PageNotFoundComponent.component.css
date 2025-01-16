@@ -1,0 +1,33 @@
+section{
+    width: -webkit-fill-available;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    justify-self: center;
+    height: -webkit-fill-available;
+}
+h1{
+    font-family: monospace;
+    font-size: 4rem;
+    padding: 0px;
+    margin: 0px;
+}
+p{
+    font-weight: bolder;
+}
+
+a{
+    font-style: normal;
+    border: 1px solid red;
+    color: white;
+    
+    font-weight: bolder;
+    background-color: brown;
+    text-decoration: none;
+    padding: 4px;
+    
+    border-radius: 18%;
+}
+.div-ancord{
+    margin-top: 5rem;
+}
