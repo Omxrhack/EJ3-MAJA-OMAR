@@ -10,5 +10,5 @@ import { RouterOutlet } from '@angular/router';
     styleUrls: ['welcome.component.css']
 })
 export default class welcome {
-    title = 'Bienvenidos';
+
 }

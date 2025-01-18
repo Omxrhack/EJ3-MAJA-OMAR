@@ -4,7 +4,7 @@ export const routes: Routes = [
   //Integracion de las rutas.
   {
     path: 'welcome',
-    title: 'welcome',
+    title: 'Bienvenido',
     loadComponent: () => import('./app/pages/welcome/welcome.component'),
   },
   //RUTA POR DEFECTO AL DIRIGIRSE.

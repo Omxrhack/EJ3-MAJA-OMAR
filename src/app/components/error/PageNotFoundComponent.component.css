@@ -15,19 +15,3 @@ h1{
 p{
     font-weight: bolder;
 }
-
-a{
-    font-style: normal;
-    border: 1px solid red;
-    color: white;
-    
-    font-weight: bolder;
-    background-color: brown;
-    text-decoration: none;
-    padding: 4px;
-    
-    border-radius: 18%;
-}
-.div-ancord{
-    margin-top: 5rem;
-}
