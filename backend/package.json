@@ -15,8 +15,10 @@
     "express": "^4.21.2"
   },
   "devDependencies": {
+    "@types/node": "^22.10.7",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
+    "tslib": "^2.8.1",
     "typescript": "^5.7.3"
   }
 }
