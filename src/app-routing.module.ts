@@ -1,24 +1,41 @@
-
 import { Routes } from '@angular/router';
+
 export const routes: Routes = [
-  //Integracion de las rutas.
+  // Ruta de bienvenida.
   {
     path: 'welcome',
     title: 'Bienvenido',
-    loadComponent: () => import('./app/pages/welcome/welcome.component'),
+    loadComponent: () =>
+      import('./app/pages/welcome/welcome.component').then(
+        (m) => m.welcome // Asegúrate de que este es el nombre correcto del componente.
+      ),
+    children: [
+      // Ruta hija para reservas.
+      {
+        path: 'reservas',
+        title: 'Reservas',
+        loadComponent: () =>
+          import('./app/pages/reservations/Reservations.component').then(
+            (m) => m.ReservationsComponent
+          ),
+      },
+    ],
   },
-  //RUTA POR DEFECTO AL DIRIGIRSE.
+
+  // Ruta por defecto al dirigir a la aplicación.
   {
     path: '',
-    redirectTo: 'welcome',
-    pathMatch: 'full'
+    redirectTo: 'reservas',
+    pathMatch: 'full',
   },
 
-  //PAGINA DE ERROR
+  // Ruta de error para enlaces no válidos.
   {
     path: '**',
-    title: 'Ups, ¡Parece que tenemos un problemas!',
-    loadComponent: () => import('./app/components/error/PageNotFoundComponent.component'),
+    title: 'Ups, ¡Parece que tenemos un problema!',
+    loadComponent: () =>
+      import('./app/components/error/PageNotFoundComponent.component').then(
+        (m) => m.PageNotFoundComponent
+      ),
   },
-
 ];

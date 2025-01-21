@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-root',
@@ -9,6 +9,6 @@ import { RouterOutlet } from '@angular/router';
     templateUrl: 'welcome.component.html',
     styleUrls: ['welcome.component.css']
 })
-export default class welcome {
+export class welcome {
 
 }

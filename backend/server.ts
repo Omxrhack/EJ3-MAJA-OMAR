@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import { res_data } from "../src/data";
 
 const app = express();
 
@@ -11,7 +12,15 @@ app.use(cors({
 }));
 
 app.get('/api/reservations', (req, res) => {
-    res.send("Hola mundo");
+    res.send(res_data);
+})
+
+app.get('/api/reservations/:reserID', (req, res) => {
+    const resID = req.params.reserID;
+    const reserva = res_data.find(reserva => reserva.id == resID)
+    res.send(reserva);
+    // console.log(resID)
+    // console.log(reserva)
 })
 
 const port = 5000;

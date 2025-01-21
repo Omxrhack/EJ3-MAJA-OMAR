@@ -1,0 +1,25 @@
+#### COMO LEVANTAR EL BACKEND Y EL FRONTEND #####
+##  PRIMERO DEBEMOS INSTALAR LOS RECURSOS COMO LIBRERIAS PARA ESTO EJECUTAMOS EL SIGUIENTE COMANDO EN LA TERMINAL
+##
+##
+##  npm install
+##
+##
+##
+##
+##  YA INSTALADO LOS RECURSOS DEL PROYECTO PROCEDEMOS A LEVANTAR EL BACKEND PARA ESTO NOS UBICAMOS EN LA CARPETA "BACKEND"
+##
+##  cd backend
+##  npm start
+##  
+##
+##  UNA VEZ LEVANTADO EL SERVIDOR (BACKEND) , LEVANTAMOS EL FRONTEND.
+#   para esto debemos regresarnos a la carpeta del proyecto frontend
+##
+##  cd ..
+##  ng server
+##
+##
+##
+##
+##

@@ -1,0 +1,13 @@
+<div class="reservations-list">
+    <h1>Reservaciones</h1>
+    <p>Consulta los detalles de cada reservación:</p>
+    <div *ngFor="let reservation of reservations" class="reservation-card">
+        <h2>{{ reservation.name }}</h2>
+        <p><strong>ID:</strong> {{ reservation.id }}</p>
+        <p><strong>Hora de Inicio:</strong> {{ reservation.hoursStart }}</p>
+        <p><strong>Hora de Fin:</strong> {{ reservation.hoursEnd }}</p>
+        <p><strong>Fecha:</strong> {{ reservation.day }}/{{ reservation.month }}</p>
+        <p><strong>Edad:</strong> {{ reservation.age }}</p>
+        <p><strong>Participantes:</strong> {{ reservation.participants }}</p>
+    </div>
+</div>
